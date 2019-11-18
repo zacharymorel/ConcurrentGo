@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+// 4 concurrent workers all pulling items off the jobs que and putting the feed in to the results que at their end
 func main() {
 	// buffer channels given a size of 100
 	jobs := make(chan int, 100)
